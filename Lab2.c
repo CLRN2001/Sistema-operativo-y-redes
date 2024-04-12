@@ -50,7 +50,7 @@ int main() {
         }
         else if(stop == 4){
             //Con este execlp ejecutamos un ps para asi ver los procesos de manera detallada
-            execlp("ps",NULL);
+            execlp("ps", "ps", NULL);
             
         }
         else if(stop == 5){
