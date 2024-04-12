@@ -10,7 +10,7 @@ int main() {
     pid_t process;
 
     //Se crea mediante el uso de fork() un proceso hijo, tendra un valor de 0 o mayor que 0 si es el padre
-	process = fork(); 
+    process = fork(); 
 
     // Mediante este if se puede distinguir que proceso se esta produciendo (si el padre o el hijo).
     if (process == 0){
