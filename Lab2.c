@@ -22,8 +22,6 @@ int main() {
     else{
 		printf("proceso padre [");
         printf("padre: pid es %d]\n", getpid());
-        //con esta pausa podemos recordar los Pid del padre e hijo asi poder usar kill mas adelante
-        //sleep(15);
 
         printf("(1) Ejemplo de exit()\n");
         printf("(2) Ejemplo de abort()\n");
