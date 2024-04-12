@@ -21,7 +21,7 @@ int main() {
     }
 
     else{
-		printf("proceso padre [");
+	printf("proceso padre [");
         printf("padre: pid es %d]\n", getpid());
 
         printf("(1) Ejemplo de exit()\n");
