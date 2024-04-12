@@ -15,7 +15,7 @@ int main() {
 
     // Mediante este if se puede distinguir que proceso se esta produciendo (si el padre o el hijo).
     if (process == 0){
-		printf("proceso hijo ["); 
+	printf("proceso hijo ["); 
         printf("hijo: pid es %d]\n", getpid());
         printf("Ingrese el comando que desea realizar:\n");
     }
