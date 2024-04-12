@@ -37,7 +37,7 @@ int main() {
             exit(0);
         }
         else if(stop == 2){
-            //A continuacion se generara un error de core dumped por el aborto\n
+            //A continuacion se generara un error de core dumped por el aborto
             abort();
 
         }
