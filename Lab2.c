@@ -6,6 +6,7 @@
 int main() {
     int stop;
     char pid[10];
+	
     //Creamos una variable pid_t lo cual representara un Pid siendo un int.
     pid_t process;
 
