@@ -58,7 +58,7 @@ int main() {
   }
 
   while (decision != 0) {
-    printf("Bienvenido al teadro ICB\n");
+    printf("Bienvenido al teatro ICB\n");
     printf("[1] Consultar estado de los asientos\n");
     printf("[2] Reservar asiento\n");
     printf("[3] Cancelar reserva\n");
