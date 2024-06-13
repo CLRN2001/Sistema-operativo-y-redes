@@ -11,7 +11,7 @@ int main() {
     int sock = 0;
     struct sockaddr_in serv_addr;
     char buffer[BUF_SIZE] = {0};
-    const char *mensaje = "Hola, servidor!\n";
+    const char *mensaje = "Hola!\n";
 
     // Crear el socket
     if ((sock = socket(AF_INET, SOCK_STREAM, 0)) < 0) {
@@ -35,15 +35,16 @@ int main() {
         exit(EXIT_FAILURE);
     }
 
-    // Leer mensaje de bienvenida del servidor
+    
+    // Enviar mensaje al servidor
+    send(sock, mensaje, strlen(mensaje), 0);
+    printf("Mensaje enviado al servidor\n");
+
+    // Leer mensaje de vuelta
     int valread = read(sock, buffer, BUF_SIZE);
     if (valread > 0) {
         printf("Mensaje recibido del servidor: %s\n", buffer);
     }
-
-    // Enviar mensaje al servidor
-    send(sock, mensaje, strlen(mensaje), 0);
-    printf("Mensaje enviado al servidor\n");
 
     // Cerrar el socket
     close(sock);
